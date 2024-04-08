@@ -1,0 +1,14 @@
+<div class="flex flex-col justify-center items-center">
+  @if (!cursos) {
+  <app-tabla-alumnos></app-tabla-alumnos>
+  } @else {
+  <app-tabla-cursos></app-tabla-cursos>
+  }
+
+  <button
+    class="m-auto inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-blue-700 rounded shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none"
+    (click)="handleCambio()"
+  >
+    Cambiar de tabla
+  </button>
+</div>

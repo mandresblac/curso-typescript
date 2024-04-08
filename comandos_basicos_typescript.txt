@@ -1,0 +1,10 @@
+npm install typescript --save-dev Instala typescript en un proyecto especifico
+npm install -g typescript  Instala typescript globalmente
+
+tsc  Es el comando de Typescript para compilar en la terminal
+tsc -v  Para saber la version de typescript que tenemos instalada
+tcs nombreDeArchivo.ts -w  La bandera -w de (watch) es para que observe los cambios de un solo archivo, automaticamente 
+
+tsc -init  Para inicializar typescript en nuestro proyecto
+tsc -w  La bandera -w de (watch) es para que observe los cambios, no de uno sino de todos los archivos de un proyecto, automaticamente.
+
