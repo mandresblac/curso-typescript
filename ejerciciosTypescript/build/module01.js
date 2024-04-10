@@ -15,3 +15,18 @@ var ContractStatus;
 let employeeStatus = ContractStatus.Temp;
 console.log(employeeStatus);
 console.log(ContractStatus[employeeStatus]);
+//function
+const add = (x, y) => {
+    if (typeof x === 'number' && typeof y === 'number') {
+        return x + y;
+    }
+    if (typeof x === 'string' && typeof y === 'string') {
+        return x.concat(y);
+    }
+    throw new Error("Los parametros deben ser numeros o strings.");
+};
+console.log(add("one", "two"));
+console.log(add(1, 5));
+console.log(add("one", 2));
+//Tuplas
+let person1 = ['Marcia', 35];
