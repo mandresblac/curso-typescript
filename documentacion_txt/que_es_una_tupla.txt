@@ -1,0 +1,1 @@
+Una tupla es una matriz que tiene un número específico de elementos. Cada elemento es de un tipo específico y debe aparecer exactamente en el mismo orden cuando se le asignan valores.
