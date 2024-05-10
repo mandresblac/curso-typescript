@@ -1,13 +1,24 @@
-Nota: Para instalar Typescript en mi equipo priemro debo tener instalado Node.js
+Nota: Para instalar Typescript en mi equipo primero debo tener instalado Node.js
 
 npm install -g typescript  ---> Instala typescript globalmente
 npm install typescript --save-dev  --->  Instala typescript en un proyecto especifico
 
-tsc  --->  Comando de Typescript que compila todos los archivos .ts en la carpeta actual y genera un archivo .js para cada uno, tambien sirve para comprobar que Typescript esta instalado correctamente en su equipo.
+
+tsc --help  --->  Muestra todo el listado de comandos y de opciones de Typescript en la terminal.
+tsc  --->  Comando de Typescript que compila todos los archivos .ts en la carpeta actual y genera un archivo .js para cada uno, también sirve para comprobar que Typescript esta instalado correctamente en su equipo.
 
 tsc -v  --->  Para saber la version de typescript que tenemos instalada
-tsc nombreDeArchivo.ts -w  --->  Para compilar un archivo específico, la bandera -w de (watch) es para que observe los cambios de un solo archivo automaticamente. 
+tsc nombreDeArchivo.ts -w  --->  Para compilar un archivo específico, la bandera -w de (watch) es para que observe los cambios de un solo archivo automáticamente. 
 
 tsc --init  --->  Inicializa un proyecto TypeScript y crea un archivo tsconfig.json.
-tsc -w --->  La bandera -w de (watch) es para que observe los cambios, no de uno sino de todos los archivos de un proyecto, automaticamente.
+tsc -w --->  La bandera -w de (--watch) es para que observe los cambios, no de uno sino de todos los archivos de un proyecto, automáticamente.
 
+tsc --outDir dist nombreDeArchivo   --->  Crea directorio dist y dentro crea el archivo compilado a JavaScript
+
+
+
+CONFIGURACIONES BASICAS DEL ARCHIVO  tsconfig.json
+
+Línea 14 que dice:   "target": "es2016"   la cambiamos por:   "target": "ES6"
+Descomentamos línea 29 que dice:  "rootDir": "./"   y la modificamos así:   "rootDir": "./src"
+Descomentamos línea 58 que dice:  "outDir": "./"   y la modificamos así:   "outDir": "./dist"
