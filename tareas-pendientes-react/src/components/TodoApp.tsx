@@ -5,7 +5,7 @@ export const TodoApp = () => {
   const [nuevaTarea, setNuevaTarea] = useState<string>("")
   const [listaTareas,setListaTareas] = useState<string[]>([])
   const handleAddTask = () => {
-    if (nuevaTarea.trim() === "") return;
+    if (nuevaTarea.trim() === "") return;// Sale de la aplicacion
     setListaTareas(tareasAnteriores => [...tareasAnteriores, nuevaTarea]);
     setNuevaTarea("");
   };

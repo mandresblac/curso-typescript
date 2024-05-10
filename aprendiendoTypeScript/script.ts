@@ -138,18 +138,24 @@ pelicula2.proyectarEnCine();
 
 // Encapsulamiento (get y set) y genericos
 class Sorteo<T> {
+  // private solo permite acceso dentro de la misma clase 
+  // public permite acceso desde afuera de la clase
   private ticket?: T;
 
   constructor(private nombre: string) {}
 
+  // set y get es la forma de encapsular o encapsulamiento en las Clases
+  // set es para establecer o configurar un valor
   setTicket(numero: T) {
     this.ticket = numero;
   }
 
+  // get es para obtener el valor, es decir, mostrar o retornar un valor
   getTicket() {
     return this.ticket;
   }
 
+  // Metodo publico que se puede llamar desde afuera de la clase
   public sortear(): string {
     return `Para ${this.nombre} el ticket es ${this.ticket}`;
   }

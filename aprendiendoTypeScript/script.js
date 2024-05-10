@@ -101,12 +101,16 @@ class Sorteo {
     constructor(nombre) {
         this.nombre = nombre;
     }
+    // set y get es la forma de encapsular o encapsulamiento en las Clases
+    // set es para establecer o configurar un valor
     setTicket(numero) {
         this.ticket = numero;
     }
+    // get es para obtener el valor, es decir, mostrar o retornar un valor
     getTicket() {
         return this.ticket;
     }
+    // Metodo publico que se puede llamar desde afuera de la clase
     sortear() {
         return `Para ${this.nombre} el ticket es ${this.ticket}`;
     }
