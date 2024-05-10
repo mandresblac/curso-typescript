@@ -1,3 +1,5 @@
+/* En typescript hay tres tipos de datos: primitivos, compuestos y definidos por el usuario */
+
 let cuenta: string = "cuenta";
 let cuentaNumerica: number = 3_000_000;
 let cuentaActiva: boolean = false;

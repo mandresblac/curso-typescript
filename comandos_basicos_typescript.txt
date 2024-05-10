@@ -11,7 +11,7 @@ tsc -v  --->  Para saber la version de typescript que tenemos instalada
 tsc nombreDeArchivo.ts -w  --->  Para compilar un archivo específico, la bandera -w de (watch) es para que observe los cambios de un solo archivo automáticamente. 
 
 tsc --init  --->  Inicializa un proyecto TypeScript y crea un archivo tsconfig.json.
-tsc -w --->  La bandera -w de (--watch) es para que observe los cambios, no de uno sino de todos los archivos de un proyecto, automáticamente.
+tsc -w --->  La bandera -w de (--watch) es para que observe los cambios automáticamente, pero no de uno, sino de todos los archivos de un proyecto, pero OJO: para que funcione hay que inicializar primero un proyecto typescript con el comando tsc --init
 
 tsc --outDir dist nombreDeArchivo   --->  Crea directorio dist y dentro crea el archivo compilado a JavaScript
 

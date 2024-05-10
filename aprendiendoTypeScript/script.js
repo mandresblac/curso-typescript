@@ -42,6 +42,7 @@ array = [1, 3, 5, 7, 9];
 console.log(array);
 let arregloNumeros = [1, 2, 3, 4, 5, 6, 7];
 let arregloStrings = ["HTML", "CSS", "JS"];
+let arregloVarios = [2, "Hola", 1, "Mundo"];
 console.log(arregloNumeros[0]);
 let programador = {
     nombre: "Manuel Blanco",
@@ -63,6 +64,11 @@ let dev2 = {
     nombre: "Federico",
     tecnologias: ["HTML", "Cobol"],
     tomarCafe: null
+};
+let dev3 = {
+    nombre: "Pedro",
+    tecnologias: ["HTML", "Css"],
+    // tomarCafe: null
 };
 const enviarCurriculum = (programador) => {
     console.log(`Este curriculum es de ${programador.nombre}`);

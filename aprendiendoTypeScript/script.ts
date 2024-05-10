@@ -51,6 +51,7 @@ console.log(array);
 
 let arregloNumeros: number[] = [1, 2, 3, 4, 5, 6, 7];
 let arregloStrings: string[] = ["HTML", "CSS", "JS"];
+let arregloVarios: (string | number)[] = [2, "Hola", 1, "Mundo"];
 
 console.log(arregloNumeros[0]);
 
@@ -90,6 +91,12 @@ let dev2: NuevoProgramador = {
   nombre: "Federico",
   tecnologias: ["HTML", "Cobol"],
   tomarCafe: null
+};
+
+let dev3: NuevoProgramador = {
+  nombre: "Pedro",
+  tecnologias: ["HTML", "Css"],
+  // tomarCafe: null
 };
 
 const enviarCurriculum = (programador: NuevoProgramador) => {

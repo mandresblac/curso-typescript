@@ -1,4 +1,5 @@
 "use strict";
+/* En typescript hay tres tipos de datos: primitivos, compuestos y definidos por el usuario */
 let cuenta = "cuenta";
 let cuentaNumerica = 3000000;
 let cuentaActiva = false;
