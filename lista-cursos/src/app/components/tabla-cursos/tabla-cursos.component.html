@@ -1,17 +1,21 @@
 <h1 class="text-lg text-center font-bold m-5">Tabla Cursos</h1>
 <table class="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-800 text-gray-200">
-  <tr class="text-center border-b border-gray-300">
-    <th class="px-4 py-3">Materia</th>
-    <th class="px-4 py-3">Dificultad</th>
-    <th class="px-4 py-3">Requiere</th>
-  </tr>
-  <tr
-    class="bg-gray-700 border-b border-gray-600 text-center whitespace-nowrap"
-    *ngFor="let curso of cursos"
-  >
-    <td class="px-4 py-3">{{ curso.materia }}</td>
-    <td class="px-4 py-3">{{ curso.dificultad }}</td>
-    <td class="px-4 py-3">{{ curso.requiere }}</td>
-  </tr>
-  <!-- each row -->
+  <thead>
+    <tr class="text-center border-b border-gray-300">
+      <th class="px-4 py-3">Materia</th>
+      <th class="px-4 py-3">Dificultad</th>
+      <th class="px-4 py-3">Requiere</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      class="bg-gray-700 border-b border-gray-600 text-center whitespace-nowrap"
+      *ngFor="let curso of cursos"
+    >
+      <td class="px-4 py-3">{{ curso.materia }}</td>
+      <td class="px-4 py-3">{{ curso.dificultad }}</td>
+      <td class="px-4 py-3">{{ curso.requiere }}</td>
+    </tr>
+    <!-- each row -->
+  </tbody>
 </table>

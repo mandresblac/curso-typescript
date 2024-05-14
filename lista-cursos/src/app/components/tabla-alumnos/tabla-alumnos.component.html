@@ -1,17 +1,22 @@
 <h1 class="text-lg text-center font-bold m-5">Tabla alumnos</h1>
 <table class="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-800 text-gray-200">
-  <tr class="text-left border-b border-gray-300">
-    <th class="px-4 py-3">Nombre</th>
-    <th class="px-4 py-3">Apellido</th>
-    <th class="px-4 py-3">Promedio</th>
-  </tr>
+  <thead>
+    <tr class="text-left border-b border-gray-300">
+      <th class="px-4 py-3">Nombre</th>
+      <th class="px-4 py-3">Apellido</th>
+      <th class="px-4 py-3">Promedio</th>
+    </tr>
+  </thead>
+
   <!-- each row -->
-  <tr
-    class="bg-gray-700 border-b border-gray-600 text-center"
-    *ngFor="let alumno of alumnos"
-  >
-    <td class="px-4 py-3">{{ alumno.nombre }}</td>
-    <td class="px-4 py-3">{{ alumno.apellido }}</td>
-    <td class="px-4 py-3">{{ alumno.promedio }}</td>
-  </tr>
+  <tbody>
+    <tr
+      class="bg-gray-700 border-b border-gray-600 text-center"
+      *ngFor="let alumno of alumnos"
+    >
+      <td class="px-4 py-3">{{ alumno.nombre }}</td>
+      <td class="px-4 py-3">{{ alumno.apellido }}</td>
+      <td class="px-4 py-3">{{ alumno.promedio }}</td>
+    </tr>
+  </tbody>
 </table>
