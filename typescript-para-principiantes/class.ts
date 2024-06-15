@@ -6,6 +6,10 @@ class Shape {
     this.area = width * height;
     this.color = "Pink";
   }
+
+  shoutout() {
+    return "I'm a " + this.color + " " + this.name + " with a area of " + this.area + " cm squared.";
+  }
 }
 
 class Shape3D extends Shape {
@@ -24,6 +28,7 @@ class Shape3D extends Shape {
     return super.shoutout();
   }
 }
-let cube = new Shape3D("cube", 30, 30, 30);
+
+const cube = new Shape3D("cube", 30, 30, 30);
 console.log( cube.shoutout() );
 console.log( cube.superShout() );
