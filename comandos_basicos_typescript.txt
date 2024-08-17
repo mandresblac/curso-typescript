@@ -19,6 +19,10 @@ tsc --outDir dist nombreDeArchivo   --->  Crea directorio dist y dentro crea el 
 CONFIGURACIONES BASICAS DEL ARCHIVO  tsconfig.json
 
 Línea 14 que dice:   "target": "es2016"   la cambiamos por:   "target": "ES6"
-Descomentamos línea 29 que dice:  "rootDir": "./"   y la modificamos así:   "rootDir": "./src" carpeta desde donde queremos compilar nuestros archivos.
-Descomentamos línea 58 que dice:  "outDir": "./"   y la modificamos así:   "outDir": "./dist" carpeta de salida
+
+Descomentamos línea 29 que dice:  "rootDir": "./"   y la modificamos así:   "rootDir": "./src"
+./src es la carpeta desde donde queremos compilar nuestros archivos de Typescript.
+
+Descomentamos línea 58 que dice:  "outDir": "./"   y la modificamos así:   "outDir": "./dist"
+./dist es la carpeta donde queremos que se ubiquen nuestros archivos transpilados o compilados a javascritp
 
