@@ -7,7 +7,7 @@ tsc -v  --->  Para saber la version de typescript que tenemos instalada
 tsc --help  --->  Muestra todo el listado de comandos y de opciones de Typescript en la terminal.
 
 tsc  --->  Comando de Typescript que compila todos los archivos .ts en la carpeta actual y genera un archivo .js para cada uno, también sirve para comprobar que Typescript esta instalado correctamente en su equipo.
-tsc nombreDeArchivo.ts -w  --->  Para compilar un archivo específico, la bandera -w de (watch) es para que observe los cambios de un solo archivo automáticamente. 
+tsc nombreDeArchivo.ts -w  --->  Para compilar un archivo específico, la bandera -w de (watch) es para que observe los cambios de un solo archivo automáticamente.
 
 tsc --init  --->  Inicializa un proyecto TypeScript y crea un archivo tsconfig.json.
 tsc -w --->  La bandera -w de (--watch) es para que observe los cambios automáticamente, pero no de uno, sino de todos los archivos de un proyecto, pero OJO: para que funcione hay que inicializar primero un proyecto typescript con el comando tsc --init
@@ -19,5 +19,6 @@ tsc --outDir dist nombreDeArchivo   --->  Crea directorio dist y dentro crea el 
 CONFIGURACIONES BASICAS DEL ARCHIVO  tsconfig.json
 
 Línea 14 que dice:   "target": "es2016"   la cambiamos por:   "target": "ES6"
-Descomentamos línea 29 que dice:  "rootDir": "./"   y la modificamos así:   "rootDir": "./src"
-Descomentamos línea 58 que dice:  "outDir": "./"   y la modificamos así:   "outDir": "./dist"
+Descomentamos línea 29 que dice:  "rootDir": "./"   y la modificamos así:   "rootDir": "./src" carpeta desde donde queremos compilar nuestros archivos.
+Descomentamos línea 58 que dice:  "outDir": "./"   y la modificamos así:   "outDir": "./dist" carpeta de salida
+
