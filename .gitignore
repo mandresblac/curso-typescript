@@ -1,2 +1,6 @@
-workspace.code-workspace*
-dist*
+# Ignora los archivos relacionados a API keys
+.env
+
+# Ignora todos los archivos pdf
+*.pdf
+
