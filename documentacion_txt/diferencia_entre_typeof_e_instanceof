@@ -1,0 +1,52 @@
+En TypeScript (y JavaScript), typeof e instanceof son operadores que se utilizan para verificar tipos, pero tienen diferencias importantes en cómo y cuándo se deben usar.
+
+
+1. TYPEOF
+El operador typeof se utiliza para verificar el tipo primitivo de una variable o expresión en tiempo de ejecución. Funciona para tipos primitivos como number, string, boolean, undefined, symbol, y para object (aunque esto también incluye null). No puede verificar clases o tipos complejos como instancias de clases o arreglos de manera precisa.
+
+Ejemplos de typeof:
+
+let edad = 25;
+console.log(typeof edad); // "number"
+
+let nombre = "Juan";
+console.log(typeof nombre); // "string"
+
+let indefinido;
+console.log(typeof indefinido); // "undefined"
+
+let objeto = { a: 1 };
+console.log(typeof objeto); // "object"
+
+let esValido = true;
+console.log(typeof esValido); // "boolean"
+
+
+2. INSTANCEOF
+El operador instanceof se utiliza para comprobar si un objeto es instancia de una clase o de una función constructora. Verifica si el prototipo de la clase o constructor aparece en la cadena de prototipos del objeto. Solo funciona con objetos, no con tipos primitivos.
+
+Ejemplos de instanceof:
+
+class Persona {
+	nombre: string;
+	constructor(nombre: string) {
+		this.nombre = nombre;
+	}
+}
+
+let persona = new Persona("Ana");
+console.log(persona instanceof Persona); // true
+
+class Animal {}
+let animal = new Animal();
+console.log(animal instanceof Persona); // false
+console.log(animal instanceof Animal);  // true
+
+
+CASO DE USO INCORRECTO CON TYPEOF:
+
+let persona = new Persona("Ana");
+console.log(typeof persona); // "object", no distingue la clase Persona
+
+En este caso, typeof solo retorna "object" para cualquier objeto, pero no distingue la clase específica. Aquí es donde instanceof sería más útil.
+
